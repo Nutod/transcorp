@@ -10,13 +10,20 @@
 
   &-post {
     &__item {
+      &:not(:last-child) {
+        margin-right: 1rem;
+      }
       background: #fff;
-      width: 18rem;
 
       &__image {
         width: 18rem;
         height: 18rem;
         background: pink;
+
+        @media (max-width: $bp-largest) {
+          width: 10rem;
+          height: 10rem;
+        }
       }
 
       &__date {

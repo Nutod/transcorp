@@ -17,7 +17,19 @@ body {
   width: 100%;
   display: grid;
   grid-template-columns: minmax(25rem, 1fr) repeat(6, 1fr) minmax(25rem, 1fr);
-  grid-template-rows: 3rem 10rem 60rem 70rem 40vw 70rem 50rem 40rem 30rem; }
+  grid-template-rows: 3rem 10rem 60rem 70rem 60rem repeat(4, max-content); }
+  @media (max-width: 75em) {
+    body {
+      background: crimson; } }
+  @media (max-width: 62.5em) {
+    body {
+      background: blue; } }
+  @media (max-width: 50em) {
+    body {
+      background: peru; } }
+  @media (max-width: 37.5em) {
+    body {
+      background: teal; } }
 
 h2 {
   font-size: 5.2rem;
@@ -126,7 +138,9 @@ span {
   transform: translateX(-50%);
   background: #ffffff;
   display: flex;
-  box-shadow: 0 10px 20px rgba(67, 67, 67, 0.2); }
+  justify-content: space-between;
+  box-shadow: 0 10px 20px rgba(67, 67, 67, 0.2);
+  width: 60vw; }
   .check-in__wrapper {
     display: flex;
     padding: 3.2rem; }
@@ -204,6 +218,9 @@ span {
     display: flex;
     margin-top: 1rem;
     margin-bottom: 2rem; }
+    @media (max-width: 75em) {
+      .discover-room {
+        flex-direction: column; } }
     .discover-room__image {
       width: 8rem;
       height: 6rem;
@@ -250,6 +267,10 @@ span {
     background-color: pink;
     margin-top: 8rem;
     border-radius: 50%; }
+    @media (max-width: 75em) {
+      .testimonials__info__image {
+        width: 8rem;
+        height: 8rem; } }
   .testimonials__info__name {
     margin-top: 2.5rem;
     color: #000000;
@@ -275,12 +296,17 @@ span {
     display: flex;
     justify-content: space-between; }
   .blog-post__item {
-    background: #fff;
-    width: 18rem; }
+    background: #fff; }
+    .blog-post__item:not(:last-child) {
+      margin-right: 1rem; }
     .blog-post__item__image {
       width: 18rem;
       height: 18rem;
       background: pink; }
+      @media (max-width: 75em) {
+        .blog-post__item__image {
+          width: 10rem;
+          height: 10rem; } }
     .blog-post__item__date {
       padding: 0.5rem 1rem;
       color: #9b9b9b; }
@@ -364,6 +390,6 @@ span {
     .footer-nav__social-media > * {
       width: 2rem;
       height: 2rem;
-      background: crimson; }
+      background: pink; }
       .footer-nav__social-media > *:not(:last-child) {
         margin-right: 1.5rem; }
