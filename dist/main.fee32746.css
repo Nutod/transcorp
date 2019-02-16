@@ -19,8 +19,20 @@ body {
   grid-template-columns: minmax(25rem, 1fr) repeat(6, 1fr) minmax(25rem, 1fr);
   grid-template-rows: 3rem 10rem 60rem 70rem 240rem; }
 
+h2 {
+  font-size: 5.2rem;
+  font-family: Georgia, serif;
+  letter-spacing: 2px;
+  color: #000000; }
+
 h3 {
   font-size: 4.8rem;
+  font-family: Georgia, serif;
+  letter-spacing: 2px;
+  color: #000000; }
+
+h4 {
+  font-size: 1.6rem;
   font-family: Georgia, serif;
   letter-spacing: 2px;
   color: #000000; }
@@ -67,7 +79,7 @@ span {
       border-bottom: 1px solid #526173; }
 
 .hero {
-  background: crimson;
+  background: palegoldenrod;
   padding: 1rem;
   grid-column: 1 / -1;
   background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.7), rgba(67, 67, 67, 0.2));
@@ -110,10 +122,11 @@ span {
 .check-in {
   position: absolute;
   left: 50%;
-  top: 88%;
+  top: 87%;
   transform: translateX(-50%);
   background: #ffffff;
-  display: flex; }
+  display: flex;
+  box-shadow: 0 10px 20px rgba(67, 67, 67, 0.2); }
   .check-in__wrapper {
     display: flex;
     padding: 3.2rem; }
@@ -141,13 +154,66 @@ span {
     text-transform: uppercase; }
 
 .about {
-  background: crimson;
-  padding: 1rem;
-  grid-column: 1 / -1; }
+  padding: 18rem 5rem;
+  grid-column: 2 / 8;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+  .about__section {
+    font-size: 1.4rem;
+    letter-spacing: 4.9px;
+    color: #9b9b9b;
+    text-transform: uppercase;
+    margin-bottom: 4rem; }
+    .about__section--u {
+      text-decoration: underline;
+      text-transform: uppercase; }
+  .about__header {
+    font-size: 3.2rem;
+    margin: 0 5rem; }
+  .about__text {
+    margin: 2rem 5rem;
+    line-height: 2;
+    letter-spacing: 0.8px;
+    color: #9b9b9b; }
+  .about__image {
+    margin-top: 2rem;
+    background: pink;
+    width: 65rem;
+    height: 30rem;
+    margin-bottom: 5rem; }
 
 .discover {
-  background: pink;
-  padding: 1rem; }
+  grid-column: 1 / -1;
+  height: 40vw;
+  display: grid;
+  grid-template-columns: 2fr 3fr; }
+  .discover__info {
+    padding: 6rem 10rem; }
+    .discover__info__intro {
+      font-size: 1.2rem;
+      letter-spacing: 4.9px;
+      color: #9b9b9b;
+      text-transform: uppercase;
+      margin-bottom: 1.2rem; }
+    .discover__info__header {
+      font-size: 2.5rem; }
+  .discover__detail {
+    background: tan; }
+  .discover-room {
+    display: flex;
+    margin-top: 1rem;
+    margin-bottom: 2rem; }
+    .discover-room__image {
+      width: 10rem;
+      height: 6rem;
+      background: pink;
+      margin-right: 1rem; }
+    .discover-room__info p {
+      color: #b5b5b5; }
+    .discover-room__info span {
+      color: black; }
 
 .base-container {
   background: gray;

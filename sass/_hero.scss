@@ -1,5 +1,5 @@
 .hero {
-  background: crimson;
+  background: palegoldenrod;
   padding: 1rem;
   grid-column: 1 / -1;
   background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.7), rgba(67, 67, 67, 0.2));
@@ -53,10 +53,11 @@
 .check-in {
   position: absolute;
   left: 50%;
-  top: 88%;
+  top: 87%;
   transform: translateX(-50%);
   background: #ffffff;
   display: flex;
+  box-shadow: 0 10px 20px rgba(67, 67, 67, 0.2);
 
   &__wrapper {
     display: flex;

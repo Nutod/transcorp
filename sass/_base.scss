@@ -43,8 +43,22 @@ body {
     grid-template-rows: 3rem 10rem 60rem 70rem 240rem;
 }
 
+h2 {
+    font-size: 5.2rem;
+    font-family: $font-display;
+    letter-spacing: 2px;
+    color: #000000;
+}
+
 h3 {
     font-size: 4.8rem;
+    font-family: $font-display;
+    letter-spacing: 2px;
+    color: #000000;
+}
+
+h4 {
+    font-size: 1.6rem;
     font-family: $font-display;
     letter-spacing: 2px;
     color: #000000;
