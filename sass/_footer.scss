@@ -1,5 +1,64 @@
 .footer {
-  background: orchid;
-  padding: 1rem;
+  background: #211f20;
   grid-column: 1 / -1;
+  padding: 0 25rem;
+  padding-top: 8rem;
+  padding-bottom: 2rem;
+
+  &-container {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #9b9b9b;
+    padding-bottom: 2rem;
+  }
+
+  display: flex;
+  flex-direction: column;
+
+
+  p {
+    font-size: 1.2rem;
+  }
+
+  &-nav {
+    &__one {}
+    
+    &__two {}
+
+    &__three {}
+
+    &__divider {
+      grid-column: 1 / -1;
+      background: #9b9b9b;
+      height: 1px;
+    }
+
+    &__newsletter {
+      input {
+        margin-top: 1rem;
+        background: none;
+        color: #9b9b9b;
+        border: none;
+        padding-bottom: 1rem;
+        border-bottom: 1px solid #9b9b9b;
+      }
+    }
+
+    &__social-media {
+      align-self: flex-end;
+      padding-top: 2rem;
+
+      display: flex;
+
+      & > * {
+        width: 2rem;
+        height: 2rem;
+        background: crimson;
+
+        &:not(:last-child) {
+          margin-right: 1.5rem;
+        }
+      }
+    }
+  }
 }

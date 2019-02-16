@@ -1,5 +1,46 @@
 .location {
-  background: yellowgreen;
-  padding: 1rem;
   grid-column: 1 / -1;
+
+  display: grid;
+  grid-template-columns: 3fr 2fr;
+
+  &__info {
+    padding: 5rem;
+
+    p {
+      color: #9b9b9b;
+      margin-top: 1rem;
+      font-size: 1.2rem;
+    }
+
+    &__intro {
+      font-size: 1.2rem;
+      letter-spacing: 4.9px;
+      color: #9b9b9b;
+      text-transform: uppercase;
+      margin-bottom: 1.2rem;
+    }
+
+    &__header {
+      font-size: 2.5rem;
+
+      &-sub {
+        margin-top: 1rem;
+        font-size: 2rem;
+
+        span {
+          color: #9b9b9b;
+          font-size: 2rem;
+        }
+      }
+    }
+
+    &__base {
+      margin-top: 4rem;
+    }
+  }
+
+  &__map {
+    background: palevioletred;
+  }
 }

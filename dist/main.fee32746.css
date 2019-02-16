@@ -17,7 +17,7 @@ body {
   width: 100%;
   display: grid;
   grid-template-columns: minmax(25rem, 1fr) repeat(6, 1fr) minmax(25rem, 1fr);
-  grid-template-rows: 3rem 10rem 60rem 70rem 40vw 70rem 50rem; }
+  grid-template-rows: 3rem 10rem 60rem 70rem 40vw 70rem 50rem 40rem 30rem; }
 
 h2 {
   font-size: 5.2rem;
@@ -303,11 +303,67 @@ span {
     text-align: center; }
 
 .location {
-  background: yellowgreen;
-  padding: 1rem;
-  grid-column: 1 / -1; }
+  grid-column: 1 / -1;
+  display: grid;
+  grid-template-columns: 3fr 2fr; }
+  .location__info {
+    padding: 5rem; }
+    .location__info p {
+      color: #9b9b9b;
+      margin-top: 1rem;
+      font-size: 1.2rem; }
+    .location__info__intro {
+      font-size: 1.2rem;
+      letter-spacing: 4.9px;
+      color: #9b9b9b;
+      text-transform: uppercase;
+      margin-bottom: 1.2rem; }
+    .location__info__header {
+      font-size: 2.5rem; }
+      .location__info__header-sub {
+        margin-top: 1rem;
+        font-size: 2rem; }
+        .location__info__header-sub span {
+          color: #9b9b9b;
+          font-size: 2rem; }
+    .location__info__base {
+      margin-top: 4rem; }
+  .location__map {
+    background: palevioletred; }
 
 .footer {
-  background: orchid;
-  padding: 1rem;
-  grid-column: 1 / -1; }
+  background: #211f20;
+  grid-column: 1 / -1;
+  padding: 0 25rem;
+  padding-top: 8rem;
+  padding-bottom: 2rem;
+  display: flex;
+  flex-direction: column; }
+  .footer-container {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #9b9b9b;
+    padding-bottom: 2rem; }
+  .footer p {
+    font-size: 1.2rem; }
+  .footer-nav__divider {
+    grid-column: 1 / -1;
+    background: #9b9b9b;
+    height: 1px; }
+  .footer-nav__newsletter input {
+    margin-top: 1rem;
+    background: none;
+    color: #9b9b9b;
+    border: none;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid #9b9b9b; }
+  .footer-nav__social-media {
+    align-self: flex-end;
+    padding-top: 2rem;
+    display: flex; }
+    .footer-nav__social-media > * {
+      width: 2rem;
+      height: 2rem;
+      background: crimson; }
+      .footer-nav__social-media > *:not(:last-child) {
+        margin-right: 1.5rem; }
