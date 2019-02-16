@@ -1,4 +1,19 @@
 .top-bar {
-  background: orangered;
-  padding: 1rem;
+  padding: 1rem 0;
+  width: 90rem;
+  grid-column: 1 / -1;
+  justify-self: center;
+  border-bottom: 1px solid $color-grey-light-1;
+
+  display: flex;
+  justify-content: space-between;
+
+  p {
+    font-weight: normal;
+    font-style: 1.1rem;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: 0.5px;
+    text-align: justify;
+  }
 }

@@ -1,0 +1,6 @@
+.base-container {
+  background: gray;
+
+  display: grid;
+  grid-template-columns: minmax(25rem, 1fr) repeat(6, 1fr) minmax(25rem, 1fr);
+}
