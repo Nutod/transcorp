@@ -1,18 +1,17 @@
 // COLOR VARIABLES
-$color-primary: #c69963;
-$color-primary-dark: #B28451;
+$color-primary: #ff7200;
+$color-primary-dark: #c5600d;
 
-$color-secondary: #101d2c;
+$color-secondary: #053b58;
 
-$color-grey-light-1: #f9f7f6;
-$color-grey-light-2: #aaa;
+$color-grey-light-1: #9b9b9b;
+$color-grey-light-2: #526173;
 
-$color-grey-dark-1: #54483A;
-$color-grey-dark-2: #6D5D4B;
+$color-dark: #000000;
 
 // FONT VARIABLES
-$font-primary: 'Nunito', sans-serif;
-$font-display: 'Josefin Sans', sans-serif;
+$font-primary: 'Source Sans Pro', sans-serif;
+$font-display: Georgia, serif;
 
 // RESPONSIVE BREAKPOINTS
 $bp-largest: 75em;   // 1200px
@@ -34,11 +33,8 @@ html {
 }
 
 body {
-    color: $color-grey-dark-2;
+    font-family: $font-primary;
+    color: $color-grey-light-2;
     font-weight: 300;
     line-height: 1.6;
-}
-
-.container {
-    display: grid;
 }

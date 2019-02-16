@@ -1,0 +1,52 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; }
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%; }
+
+body {
+  font-family: "Source Sans Pro", sans-serif;
+  color: #526173;
+  font-weight: 300;
+  line-height: 1.6; }
+
+.top-bar {
+  background: orangered;
+  padding: 1rem; }
+
+.navbar {
+  background: goldenrod;
+  padding: 1rem; }
+
+.hero {
+  background: yellow;
+  padding: 1rem; }
+
+.about {
+  background: crimson;
+  padding: 1rem; }
+
+.discover {
+  background: pink;
+  padding: 1rem; }
+
+.testimonials {
+  background: palegreen;
+  padding: 1rem; }
+
+.blog {
+  background: palevioletred;
+  padding: 1rem; }
+
+.location {
+  background: yellowgreen;
+  padding: 1rem; }
+
+.footer {
+  background: orchid;
+  padding: 1rem; }
