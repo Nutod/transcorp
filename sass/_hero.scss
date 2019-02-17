@@ -21,6 +21,10 @@
       letter-spacing: 4.9px;
       color: #ffffff;
       text-transform: uppercase;
+
+      @media (max-width: $bp-small) {
+        font-size: 1.2rem;
+      }
     }
 
     &__subject {
@@ -29,6 +33,10 @@
       font-family: $font-display;
       margin: 2rem 0;
       color: #ffffff;
+
+      @media (max-width: $bp-small) {
+        font-size: 4.5rem;
+      }
     }
 
     &__tagline {
@@ -36,6 +44,10 @@
       font-weight: 600;
       letter-spacing: 0.8px;
       color: #ffffff;
+
+      @media (max-width: $bp-small) {
+        font-size: 1.2rem;
+      }
     }
 
     &__icon {
@@ -60,6 +72,18 @@
   justify-content: space-between;
   box-shadow: 0 10px 20px rgba(67, 67, 67, 0.2);
   width: 60vw;
+
+  h3 {
+    @media (max-width: $bp-small) {
+      font-size: 2rem;
+    }
+  }
+
+  span {
+    @media (max-width: $bp-small) {
+      font-size: 1.2rem;
+    }
+  }
 
   @media (max-width: $bp-largest) {
     width: 70vw;

@@ -26,7 +26,7 @@ body {
       grid-template-columns: repeat(6, 1fr); } }
   @media (max-width: 37.5em) {
     body {
-      background: teal; } }
+      background: lightblue; } }
   @media (max-width: 20em) {
     body {
       background: lightcoral; } }
@@ -69,6 +69,13 @@ span {
   @media (max-width: 50em) {
     .top-bar {
       width: 50rem; } }
+  @media (max-width: 37.5em) {
+    .top-bar {
+      width: 40rem;
+      flex-direction: column;
+      align-items: center;
+      padding: 1rem 0;
+      padding-bottom: 3rem; } }
   .top-bar p {
     font-weight: normal;
     font-style: 1.1rem;
@@ -89,10 +96,18 @@ span {
   @media (max-width: 50em) {
     .navbar {
       width: 50rem; } }
+  @media (max-width: 37.5em) {
+    .navbar {
+      width: 30rem; } }
   .navbar ul {
     list-style: none;
     display: flex;
     justify-content: space-between; }
+    @media (max-width: 37.5em) {
+      .navbar ul {
+        flex-wrap: wrap; } }
+    .navbar ul p {
+      order: -1; }
   .navbar a {
     text-decoration: none;
     font-size: 1.4rem;
@@ -123,17 +138,26 @@ span {
       letter-spacing: 4.9px;
       color: #ffffff;
       text-transform: uppercase; }
+      @media (max-width: 37.5em) {
+        .hero-section__welcome {
+          font-size: 1.2rem; } }
     .hero-section__subject {
       font-size: 5.2rem;
       letter-spacing: 3.1px;
       font-family: Georgia, serif;
       margin: 2rem 0;
       color: #ffffff; }
+      @media (max-width: 37.5em) {
+        .hero-section__subject {
+          font-size: 4.5rem; } }
     .hero-section__tagline {
       font-size: 1.4rem;
       font-weight: 600;
       letter-spacing: 0.8px;
       color: #ffffff; }
+      @media (max-width: 37.5em) {
+        .hero-section__tagline {
+          font-size: 1.2rem; } }
     .hero-section__icon {
       background: #ffffff;
       width: 40px;
@@ -153,6 +177,12 @@ span {
   justify-content: space-between;
   box-shadow: 0 10px 20px rgba(67, 67, 67, 0.2);
   width: 60vw; }
+  @media (max-width: 37.5em) {
+    .check-in h3 {
+      font-size: 2rem; } }
+  @media (max-width: 37.5em) {
+    .check-in span {
+      font-size: 1.2rem; } }
   @media (max-width: 75em) {
     .check-in {
       width: 70vw; } }
@@ -215,6 +245,9 @@ span {
   @media (max-width: 50em) {
     .about {
       grid-column: 2 / 6; } }
+  @media (max-width: 37.5em) {
+    .about {
+      margin-bottom: 2rem; } }
   .about__section {
     font-size: 1.4rem;
     letter-spacing: 4.9px;
@@ -232,6 +265,9 @@ span {
     line-height: 2;
     letter-spacing: 0.8px;
     color: #9b9b9b; }
+    @media (max-width: 37.5em) {
+      .about__text {
+        margin-bottom: 0rem; } }
   .about__image {
     margin-top: 2rem;
     background: pink;
@@ -244,13 +280,23 @@ span {
     @media (max-width: 50em) {
       .about__image {
         width: 64vw; } }
+    @media (max-width: 37.5em) {
+      .about__image {
+        margin-bottom: 2rem; } }
 
 .discover {
   grid-column: 1 / -1;
   display: grid;
   grid-template-columns: 2fr 3fr; }
+  @media (max-width: 37.5em) {
+    .discover {
+      grid-template-columns: 1fr;
+      grid-template-rows: 2fr 1fr; } }
   .discover__info {
     padding: 6rem 10rem; }
+    @media (max-width: 37.5em) {
+      .discover__info {
+        justify-self: center; } }
     .discover__info__intro {
       font-size: 1.2rem;
       letter-spacing: 4.9px;
@@ -268,6 +314,9 @@ span {
     @media (max-width: 75em) {
       .discover-room {
         flex-direction: column; } }
+    @media (max-width: 37.5em) {
+      .discover-room {
+        align-items: center; } }
     .discover-room__image {
       width: 8rem;
       height: 6rem;

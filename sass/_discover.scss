@@ -4,8 +4,17 @@
   display: grid;
   grid-template-columns: 2fr 3fr;
 
+  @media (max-width: $bp-small) {
+    grid-template-columns: 1fr;
+    grid-template-rows: 2fr 1fr;
+  }
+
   &__info {
     padding: 6rem 10rem;
+
+    @media (max-width: $bp-small) {
+      justify-self: center;
+    }
 
     &__intro {
       font-size: 1.2rem;
@@ -31,6 +40,10 @@
 
     @media (max-width: $bp-largest) {
       flex-direction: column;
+    }
+
+    @media (max-width: $bp-small) {
+      align-items: center;
     }
 
     &__image {

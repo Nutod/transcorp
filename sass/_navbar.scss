@@ -13,10 +13,22 @@
     width: 50rem;
   }
 
+  @media (max-width: $bp-small) {
+    width: 30rem;
+  }
+
   ul {
     list-style: none;
     display: flex;
     justify-content: space-between;
+
+    @media (max-width: $bp-small) {
+      flex-wrap: wrap;
+    }
+
+    p {
+      order: -1;
+    }
   }
 
   a {
