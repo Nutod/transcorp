@@ -102,9 +102,9 @@ span {
     justify-content: space-between; }
     @media (max-width: 37.5em) {
       .navbar ul {
-        flex-wrap: wrap; } }
-    .navbar ul p {
-      order: -1; }
+        flex-wrap: wrap; }
+        .navbar ul p {
+          order: -1; } }
   .navbar a {
     text-decoration: none;
     font-size: 1.4rem;
@@ -284,7 +284,7 @@ span {
 .discover {
   grid-column: 1 / -1;
   display: grid;
-  grid-template-columns: 2fr 3fr; }
+  grid-template-columns: 3fr 4fr; }
   @media (max-width: 37.5em) {
     .discover {
       grid-template-columns: 1fr;
@@ -430,7 +430,8 @@ span {
 .location {
   grid-column: 1 / -1;
   display: grid;
-  grid-template-columns: 3fr 2fr; }
+  grid-template-columns: 3fr 2fr;
+  margin-top: 4rem; }
   @media (max-width: 37.5em) {
     .location {
       grid-template-columns: 1fr;

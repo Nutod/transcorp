@@ -3,6 +3,7 @@
 
   display: grid;
   grid-template-columns: 3fr 2fr;
+  margin-top: 4rem;
 
   @media (max-width: $bp-small) {
     grid-template-columns: 1fr;
