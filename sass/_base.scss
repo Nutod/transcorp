@@ -55,11 +55,10 @@ body {
     }
 
     @media (max-width: $bp-small) {
-        background: lightblue;
     }
 
     @media (max-width: $bp-smallest) {
-        background: lightcoral;
+        background: crimson;
     }
 }
 

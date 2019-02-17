@@ -24,12 +24,9 @@ body {
   @media (max-width: 62.5em) {
     body {
       grid-template-columns: repeat(6, 1fr); } }
-  @media (max-width: 37.5em) {
-    body {
-      background: lightblue; } }
   @media (max-width: 20em) {
     body {
-      background: lightcoral; } }
+      background: crimson; } }
 
 h2 {
   font-size: 5.2rem;
@@ -434,8 +431,17 @@ span {
   grid-column: 1 / -1;
   display: grid;
   grid-template-columns: 3fr 2fr; }
+  @media (max-width: 37.5em) {
+    .location {
+      grid-template-columns: 1fr;
+      grid-template-rows: 2fr 1fr; } }
   .location__info {
     padding: 5rem; }
+    @media (max-width: 37.5em) {
+      .location__info {
+        text-align: center;
+        justify-self: center;
+        order: -1; } }
     .location__info p {
       color: #9b9b9b;
       margin-top: 1rem;
