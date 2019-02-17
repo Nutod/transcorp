@@ -5,6 +5,14 @@
   align-self: center;
   width: 90rem;
 
+  @media (max-width: $bp-large) {
+    width: 70rem;
+  }
+
+  @media (max-width: $bp-medium) {
+    width: 50rem;
+  }
+
   ul {
     list-style: none;
     display: flex;

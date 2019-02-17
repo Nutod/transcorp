@@ -18,6 +18,7 @@ $bp-largest: 75em;   // 1200px
 $bp-large: 62.5em;   // 1000px
 $bp-medium: 50em;    // 800px;
 $bp-small: 37.5em;    // 600px;
+$bp-smallest: 20em;  // 320px;
 
 *,
 *::before,
@@ -37,25 +38,28 @@ body {
     color: $color-grey-light-2;
     font-weight: 300;
     line-height: 1.6;
-    width: 100%;
+    min-width: 300px;
     display: grid;
     grid-template-columns: minmax(25rem, 1fr) repeat(6, 1fr) minmax(25rem, 1fr);
-    grid-template-rows: 3rem 10rem 60rem 70rem 60rem repeat(4, max-content);
+    grid-template-rows: 3rem 10rem 60rem repeat(6, max-content);
 
     @media (max-width: $bp-largest) {
-        background: crimson;
+        grid-template-columns: minmax(5rem, 1fr) repeat(6, 1fr) minmax(5rem, 1fr);
     }
 
     @media (max-width: $bp-large) {
-        background: blue;
+        grid-template-columns: repeat(6, 1fr);
     }
 
     @media (max-width: $bp-medium) {
-        background: peru;
     }
 
     @media (max-width: $bp-small) {
         background: teal;
+    }
+
+    @media (max-width: $bp-smallest) {
+        background: lightcoral;
     }
 }
 

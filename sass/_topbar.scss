@@ -5,6 +5,14 @@
   justify-self: center;
   border-bottom: 1px solid $color-grey-light-1;
 
+  @media (max-width: $bp-large) {
+    width: 70rem;
+  }
+
+  @media (max-width: $bp-medium) {
+    width: 50rem;
+  }
+
   display: flex;
   justify-content: space-between;
 

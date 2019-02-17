@@ -11,6 +11,10 @@
     
   }
 
+  @media (max-width: $bp-large) {
+    grid-column: 2 / 6;
+  }
+
   &__info {
     &__intro {
       font-size: 1.2rem;
